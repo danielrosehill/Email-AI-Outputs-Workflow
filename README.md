@@ -19,17 +19,28 @@ The workflow starts with a form submission event that captures:
 - Covering note/context
 - Recipient information
 
+![alt text](screenshots/2.png)
+
 ### 2. Content Formatting Agent
+
+![alt text](screenshots/3.png)
+
 A specialized reformatting step that:
 - Converts markdown content to Gmail-safe HTML
 - Ensures proper rendering across email clients
 - Optimizes tables and formatting for email delivery
 - Uses an AI agent with specific instructions for email-compatible HTML generation
 
+#### System Prompt
+
+```
+You are a helpful assistant. Your task is to convert text from markdown into HTML that will render without issue in popular email clients - especially Gmail. Ensure particularly that markdown tables are rendered in Gmail-safe HTML. While you must preserve the full content provided by the user in their prompt, you have full latitude to make edits to enhance the formatting for email delivery - including reformatting tables into bullet point lists or any other format. Respond to the user's prompt with raw HTML suitable for adding as the body text to a HTML template. Do not add items like <html> or <body> or divs. Rather, the output should be provided within paragraphs with basic inline formatting.
+```
+
 ### 3. Email Delivery
 The final step sends the formatted content to recipients using a professional email template.
 
-![alt text](screenshots/2.png)
+![alt text](screenshots/4.png)
 
 ## Files in this Repository
 
