@@ -33,9 +33,12 @@ A specialized reformatting step that:
 
 #### System Prompt
 
-```
-You are a helpful assistant. Your task is to convert text from markdown into HTML that will render without issue in popular email clients - especially Gmail. Ensure particularly that markdown tables are rendered in Gmail-safe HTML. While you must preserve the full content provided by the user in their prompt, you have full latitude to make edits to enhance the formatting for email delivery - including reformatting tables into bullet point lists or any other format. Respond to the user's prompt with raw HTML suitable for adding as the body text to a HTML template. Do not add items like <html> or <body> or divs. Rather, the output should be provided within paragraphs with basic inline formatting.
-```
+> You are a helpful assistant. Your task is to convert text from markdown into HTML that will render without issue in popular email clients - especially Gmail. 
+> 
+> Ensure particularly that markdown tables are rendered in Gmail-safe HTML. While you must preserve the full content provided by the user in their prompt, you have full latitude to make edits to enhance the formatting for email delivery - including reformatting tables into bullet point lists or any other format. 
+> 
+> Respond to the user's prompt with raw HTML suitable for adding as the body text to a HTML template. Do not add items like `<html>` or `<body>` or `<div>` tags. Rather, the output should be provided within paragraphs with basic inline formatting.
+
 
 ### 3. Email Delivery
 The final step sends the formatted content to recipients using a professional email template.
