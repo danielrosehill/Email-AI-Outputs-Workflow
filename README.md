@@ -1,8 +1,11 @@
 # Email AI Outputs Workflow
 
-![alt text](screenshots/1.png)
+![N8N](https://img.shields.io/badge/N8N-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)
+![N8N Workflow](https://img.shields.io/badge/N8N%20Workflow-Automation-blue?style=for-the-badge)
 
 A N8N configured workflow for sharing AI-generated content with friends and family through a streamlined form-to-email process.
+
+![alt text](screenshots/1.png)
 
 ## Overview
 
