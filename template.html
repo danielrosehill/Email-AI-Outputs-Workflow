@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shared AI Note from Daniel</title>
+</head>
+<body style="margin:0; padding:0; background-color:#f5f7fa; font-family:Segoe UI, sans-serif;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#f5f7fa;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff; border:1px solid #dcdcdc;">
+
+        
+          <!-- Main Body -->
+          <tr>
+            <td style="padding:24px;">
+              <!-- Introduction -->
+              <p style="font-size:16px; color:#333333; margin:0 0 16px 0;">
+                Hi there,
+              </p>
+              <p style="font-size:14px; color:#333333; margin:0 0 24px 0;">
+                I used an AI-powered form I built to generate something I thought you might find interesting. Just wanted to share it with you.
+              </p>
+
+              <!-- Covering Note -->
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin:0 0 24px 0;">
+                <tr>
+                  <td style="background-color:#eef3fe; border-left:4px solid #3367d6; padding:16px;">
+                    <p style="margin:0; font-size:14px; color:#333333; line-height:1.6;">
+                    {{ $('On form submission').item.json['Covering Note'] }}
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Prompt Used -->
+              <p style="font-size:12px; text-transform:uppercase; color:#888888; letter-spacing:0.5px; margin:0 0 8px 0;">Prompt Used</p>
+              <div style="font-size:13px; color:#1a237e; background-color:#f0f0ff; border-left:4px solid #3949ab; padding:12px 16px; margin:0 0 24px 0; line-height:1.6;">
+              {{ $('On form submission').item.json['Prompt Used'] }}
+              </div>
+
+              <!-- AI Output -->
+              <p style="font-size:12px; text-transform:uppercase; color:#888888; letter-spacing:0.5px; margin:0 0 8px 0;">Generated Output</p>
+              <div style="font-size:14px; color:#333333; line-height:1.6; margin:0 0 24px 0;">
+              {{ $json.output }}
+              </div>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:24px; text-align:center; font-size:12px; color:#999999; background-color:#f5f7fa;">
+              This message was sent by Daniel using a custom AI form<br/>
+              built with automation tools – not directly via ChatGPT or any commercial platform.<br/><br/>
+              You can try the form too:  
+              <a href=" " target="_blank" style="color:#3367d6; text-decoration:none;">
+                Submit your own prompt here
+              </a>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
